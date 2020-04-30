@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja to Cat</title>
+    <link rel="stylesheet" href="ninja-to-cat.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $("document").ready(function(){
+            $("#img1").click(function(){
+                var htmlstring= $(this).html();
+                // console.log(htmlstring);
+                $("#img1").replaceWith("<img id='newimg1' src='img/cat0.png' alt='top of the cat'>");
+            });
+
+            $("#img2").click(function(){
+                var htmlstring= $(this).html();
+                // console.log(htmlstring);
+                $("#img2").replaceWith("<img id='newimg2' src='img/cat1.png' alt='second of the cat'>");
+            });
+
+            $("#img3").click(function(){
+                var htmlstring= $(this).html();
+                // console.log(htmlstring);
+                $("#img3").replaceWith("<img id='newimg3' src='img/cat2.png' alt='second of the cat'>");
+            });
+
+            $("#img4").click(function(){
+                var htmlstring= $(this).html();
+                // console.log(htmlstring);
+                $("#img4").replaceWith("<img id='newimg4' src='img/cat3.png' alt='fourth of the cat'>");
+            });
+
+            $("#img5").click(function(){
+                var htmlstring= $(this).html();
+                // console.log(htmlstring);
+                $("#img5").replaceWith("<img id='newimg5' src='img/cat4.png' alt='top of the cat'>");
+            });
+
+        });
+    </script>
+
+</head>
+<body>
+    <div id="wrapper">
+        <img id="img1" src="img/ninja0.png" alt="top of the ninja">
+        <img id="img2" src="img/ninja1.png" alt="second image of ninja">
+        <img id="img3" src="img/ninja2.png" alt="third image of ninja">
+        <img id="img4" src="img/ninja3.png" alt="fourth image of ninja">
+        <img id="img5" src="img/ninja4.png" alt="fifth image of ninja">
+    </div>
+
+
+</body>
+</html>
